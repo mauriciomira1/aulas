@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.main-content {
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;   /* colocar os itens em coluna */
+   row-gap: 50px;   /* tipo um margin. Tem tb só gap: 0px 10px; ou col-gap  */
+   justify-content: space-between;
+}
+
+.box-content {
+   padding: 20px;
+   border: 2px solid black;
+   width: 200px;
+   height: 200px;
+}
