@@ -24,12 +24,15 @@
    justify-content: center;
    align-items: center;
    flex-basis: 200px;  /* mesma função do min-width */
-   flex-grow: 1; /* os itens esticam para preencher a tela  */
+   flex-grow: 1; /* os itens esticam para preencher a tela. Usando junto com o flex-wrap ele reduz o tamanho do elemento antes de quebrar. Se usar o flex-grow apenas em 1 item, ele vai ficar maior que os demais */
 }
 
 .item1 {
-/*    flex-shrink: 2; */
+   flex-shrink: 2;  /* Ele diminui mais rápido que os demais itens, quando a tela reduzir para evitar quebra de tela. Nesse caso, pode ser que não compense usá-lo com o flex-wrap */
+   /* dá pra usar também o "flex: x y z(px)", onde xyz é o flex-grow flex-shrink e flex-basis */
 }
+
+
 
 .item2 {
 

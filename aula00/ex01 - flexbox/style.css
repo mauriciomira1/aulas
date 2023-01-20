@@ -7,14 +7,22 @@
    box-sizing: border-box;
 }
 
+
+body {
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+}
+
+/* CONFIGS DO HEADER */
+
 .nav-content {
    padding: 12px 4%;
    display: flex;
    flex-direction: row;
    background-color: black;
    justify-content: space-between;
-   align-items: center;
- 
+   align-items: center; 
 }
 
 .nav-icon {
@@ -51,4 +59,49 @@
 .nav-menu a:hover {
    border-color: red;
    transition: 0.4s;
+}
+
+/* CONFIGS DO MAIN */
+
+main {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   flex: 1 0 200px;
+   background-color: rgb(255, 248, 238);
+}
+
+h1 {
+   text-align: center;
+   padding: 20px;
+}
+
+.main-text {
+   text-align: justify;
+   margin: 20px;
+   max-width: 700px;
+   display: flex;
+   align-items: center;
+}
+
+
+
+/* CONFIGS DO FOOTER */
+
+.footer-content {
+   background-color: black;
+   color: white;
+   display: flex;
+   justify-content: center;
+   padding: 30px;
+}
+
+@media (max-width: 400px) {
+   .main-text {
+      font-size: 0.9em;
+   }
+
+   .nav-icon {
+      display: none;
+   }
 }
