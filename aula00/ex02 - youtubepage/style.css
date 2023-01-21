@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body {
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+}
+
+/* .container {
+   display: flex;
+   flex-direction: column;
+   flex: 1 0 400px;
+   justify-content: center;
+   align-items: center;
+} */
+
+/* MENU CONFIG */
+.menu-box {
+   display: flex;
+   justify-content: center;
+   background-color: rebeccapurple;
+   color: white;
+   padding: 10px 0;
+}
+
+.main-box {
+   display: flex;
+   flex: 1 0 400px; /* O item 1)ocupar a tela 2) Não diminuir 3) Ter um basis de 400px. Isso é bem útil para fazer o body ocupar a tela e manter o header e footer do mesmo tamanho. */
+   gap: 10px;   /* tipo um margin, mas só coloca margem entre os itens */
+   justify-content: center;  /* centralizar conteúdo na horizontal (ou vice versa) */
+   /* align-items: center; */ /* centralizar conteúdo na vertical (ou vice versa) */
+   flex-wrap: wrap;    /* para criar quebra de conteúdo quando a página diminuir */
+   padding: 10px 0;
+   align-content: center;  /* para o conteúdo ficar próximo */
+}
+
+.item-content {
+   flex-basis: 250px;  /* tipo o width */
+   height: 150px;
+   border: 2px solid black;
+   background-color: antiquewhite;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   max-width: 95vw;
+}
+
+.footer-box {
+   background-color: rgb(24, 24, 24);
+   padding: 10px 0;
+   color: white;
+   text-align: center;
+}
